@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction to Bukit Siguntang</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* === STYLE TIDAK BERUBAH, dipersingkat di sini === */
+body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:linear-gradient(135deg,#f5f5dc 0%,#e8f5e8 100%);color:#3e2723;line-height:1.6;}
+header{background:linear-gradient(135deg,#2e7d32 0%,#8d6e63 100%);color:#fff8e1;text-align:center;padding:40px 20px;position:relative;overflow:hidden;}
+header::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('https://source.unsplash.com/featured/?forest,green') no-repeat center/cover;opacity:.4;z-index:-1;}
+header h1{font-size:2.5em;margin:0;text-shadow:2px 2px 4px rgba(0,0,0,0.5);}
+.container{max-width:1200px;margin:20px auto;padding:20px;background:rgba(255,253,231,0.95);border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.2);}
+.section{margin-bottom:40px;padding:20px;border-radius:10px;background:#fff;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:transform .3s ease,box-shadow .3s ease;}
+.section:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,0.15);}
+button{background:linear-gradient(135deg,#4caf50 0%,#8d6e63 100%);color:#fff8e1;border:none;padding:12px 25px;cursor:pointer;border-radius:25px;margin:10px 5px;font-size:1em;transition:.3s;display:inline-flex;align-items:center;}
+button:hover{background:linear-gradient(135deg,#388e3c 0%,#6d4c41 100%);transform:translateY(-2px);box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+.highlight{color:#ff9800;font-weight:600;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}@media(max-width:768px){.grid{grid-template-columns:1fr;}}
+.map-container{height:400px;width:100%;border-radius:10px;overflow:hidden;}
+img{max-width:100%;height:auto;border-radius:10px;}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>🌿 Welcome to Bukit Siguntang 🌿</h1>
+  <p>Historic Site of the Sriwijaya Kingdom in Palembang, South Sumatra</p>
+</header>
+
+<div class="container">
+
+  <!-- HOME -->
+  <section class="section" id="home">
+    <h2>About Bukit Siguntang</h2>
+    <div class="grid">
+      <img src="Bukit Siguntang.jpg" alt="Bukit Siguntang">
+      <div>
+        <p>Bukit Siguntang is a historic hill about 100 meters high located in Palembang, South Sumatra, Indonesia. It is believed to be the birthplace of the ancient Sriwijaya Kingdom, one of the greatest maritime empires in Southeast Asia from the 7th to the 13th century. The site features ancient tombs, stone structures, and is surrounded by lush greenery. Visitors can hike to the top for panoramic views and explore the cultural significance tied to Malay legends and history.</p>
+        <p>This hill holds great importance in local culture, with legends of royal figures buried here. It's a popular spot for history enthusiasts and nature lovers.</p>
+        <button onclick="showSection('map')">View Map</button>
+        <button onclick="showSection('guide')">Arrival Guide</button>
+        <button onclick="showSection('tombs')">Historical Info</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="section" id="map" style="display:none;">
+    <h2>Location Map</h2>   
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4124.254770316701!2d104.72547506443127!3d-2.9966332515623453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75ea39f9e9bf%3A0xb9b4e243dc7453cb!2sBukit%20Siguntang!5e0!3m2!1sid!2sid!4v1762780667245!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p>Bukit Siguntang is located in Karanganyar Village, Plaju District, Palembang, South Sumatra. It's easily accessible from the city center, about 15 km away. Use a map app for real-time routes.</p>
+        <p><span class="highlight">Quick Route:</span> From Sultan Mahmud Badaruddin II Airport: 30-45 minutes by car or taxi. From Alang-Alang Terminal: 20-30 minutes. Avoid rush hours for a smooth trip.</p>
+    <button onclick="showSection('home')">Back</button>
+  </section>
+
+  <!-- GUIDE -->
+  <section class="section" id="guide" style="display: none;">
+    <h2>Arrival Guide</h2>
+    <div class="grid">
+    <img src="jalan.jpg" alt="Road leading to Bukit Siguntang, showing paved road with green trees around it" style="width:80%;">
+    <div>
+    <p>To reach Bukit Siguntang without difficulty, follow these steps. The site is open to the public and does not require reservations, but visit on weekdays to avoid crowds.</p>
+        <ul>
+            <li><strong>1. Transportation:</strong> From central Palembang, take Jl. Sudirman east for 10-15 minutes, then turn right onto Jl. Bukit Siguntang. Use public transport like buses or ride-hailing apps for affordable fares.</li>
+            <li><strong>2. Parking:</strong> Park in the official area at the foot of the hill (free). Capacity is limited, so arrive early.</li>
+            <li><strong>3. Entry:</strong> Pass through the main gate and pay the entrance fee of Rp10,000 per person (free for children). There are information boards at the gate, but use this website for more details.</li>
+            <li><strong>4. Hiking:</strong> Follow the marked green path (20-30minutes uphill). The path is easy, but bring a stick if needed. At the summit, enjoy views of the Musi River.</li>
+        </ul>
+        <p><span class="highlight">Opening Hours:</span> 08:00-17:00. <span class="highlight">Safety Tips:</span> Stay healthy, avoid littering, and follow staff instructions.</p>
+        <button onclick="showSection('map')">View Detailed Map</button>
+        <button onclick="showSection('home')">Back</button>
+    </div>
+    </div>
+   </section>
+ 
+
+  <!-- ======== NEW SECTION: TOMBS + INDIVIDUALS ======== -->
+  <section class="section" id="tombs" style="display:none;">
+    <h2>Royal Tombs at Bukit Siguntang</h2>
+    <img src="tombs.jpg" style="width:60%; display:block; margin:20px auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);" alt="Ancient tombs at Bukit Siguntang">
+    <p>Bukit Siguntang is home to several ancient graves that are revered by locals as the resting places of legendary figures from the Sriwijaya Kingdom. These tombs are part of Malay folklore and attract pilgrims and tourists. The site includes stone markers and is surrounded by mystical stories.</p>
+    <ul>
+      <li><strong>Raja Sigentar Alam</strong>: The founder king.</li>
+      <li><strong>Pangeran Raja Batu Api</strong>: The fiery prince.</li>
+      <li><strong>Putri Kembang Dadar</strong>: The flower princess.</li>
+      <li><strong>Putri Rambut Selako</strong>: The princess with healing hair.</li>
+      <li><strong>Panglima Tuan Junjungan</strong>: The loyal commander.</li>
+      <li><strong>Panglima Bagus Kuning</strong>: The golden warrior.</li>
+      <li><strong>Panglima Bagus Karang</strong>: The rock-like warrior.</li>
+    </ul>
+    <p>Click a name to learn more:</p>
+    <button onclick="showSection('sigentar')">Raja Sigentar Alam</button>
+    <button onclick="showSection('batuapi')">Pangeran Raja Batu Api</button>
+    <button onclick="showSection('kembangdadar')">Putri Kembang Dadar</button>
+    <button onclick="showSection('rambutselako')">Putri Rambut Selako</button>
+    <button onclick="showSection('junjungan')">Panglima Tuan Junjungan</button>
+    <button onclick="showSection('kuning')">Panglima Bagus Kuning</button>
+    <button onclick="showSection('karang')">Panglima Bagus Karang</button>
+    <button onclick="showSection('home')">Back to Home</button>
+  </section>
+
+  <!-- INDIVIDUAL TOMB PAGES -->
+  <section class="section" id="sigentar" style="display:none;">
+    <h2>Raja Sigentar Alam</h2>
+    <img src="Segentar Alam.jpg" alt="Ancient king statue" style="width:50%; display:block; margin:20px auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+    <p>
+      Raja Sigentar Alam is regarded as the legendary founder and the first ruler of the Sriwijaya Kingdom, 
+      an empire that once flourished across the Malay Archipelago. According to oral traditions and local 
+      chronicles, he was a wise and visionary leader who united fragmented communities under a single rule 
+      centered in Bukit Siguntang. His reign symbolized peace, prosperity, and the beginning of a glorious 
+      maritime civilization that connected trade and culture between India, China, and the Nusantara.
+    </p>
+    <p>
+      The tomb of Raja Sigentar Alam, located atop the serene Bukit Siguntang hill, is believed to be a 
+      sacred site that marks the birthplace of Palembang’s royal lineage. Visitors often describe the 
+      atmosphere around the tomb as tranquil and filled with spiritual energy. The site serves not only as 
+      a historical monument but also as a reminder of the greatness of the Sriwijaya Kingdom and its 
+      contributions to Southeast Asian civilization.
+    </p>
+    <button onclick="showSection('tombs')">Back</button>
+  </section>
+
+  <section class="section" id="batuapi" style="display:none;">
+    <h2>Pangeran Raja Batu Api</h2>
+    <img src="Batu Api.jpg" alt="Fiery stone" style="width:50%; display:block; margin:20px auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+    <p>
+      Pangeran Raja Batu Api, known as the Prince of the Fiery Stone, was a heroic figure and one of the 
+      greatest warriors in the history of Sriwijaya. Legends say that he possessed mystical powers to 
+      command and control fire, symbolizing courage, strength, and divine protection. He was revered for 
+      his unmatched bravery in defending the kingdom from foreign invaders and natural calamities.
+    </p>
+    <p>
+      His tomb, enshrined at Bukit Siguntang, is believed to radiate a fiery spiritual aura that inspires 
+      resilience and power. Locals visit the site to honor his valor and seek strength in overcoming 
+      adversity. The tales of Pangeran Raja Batu Api continue to live on as a metaphor for endurance, 
+      leadership, and the eternal flame of Sriwijaya’s spirit.
+    </p>    
+    <button onclick="showSection('tombs')">Back</button>
+  </section>
+
+  <section class="section" id="kembangdadar" style="display:none;">
+    <h2>Putri Kembang Dadar</h2>
+    <img src="Kembang Dadar.jpg" alt="Blossoming flower" style="width:50%; display:block; margin:20px auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+  <p>
+    Putri Kembang Dadar, or the Blossoming Flower Princess, is one of the most beloved figures in local 
+    folklore. Her beauty, gentleness, and compassion made her a symbol of purity and harmony. She is 
+    said to have possessed healing abilities and often helped the poor and the sick, earning the respect 
+    of her people and the admiration of the royal court.
+  </p>
+  <p>
+    Her story reflects the values of kindness, balance, and devotion to nature that characterized the 
+    golden age of Sriwijaya. The tomb of Putri Kembang Dadar is adorned with flowers and offerings 
+    brought by visitors who seek blessings of health, love, and prosperity. Her legacy continues to 
+    remind future generations that true beauty lies in a generous heart and a nurturing soul.
+  </p>    
+  <button onclick="showSection('tombs')">Back</button>
+  </section>
+
+  <section class="section" id="rambutselako" style="display:none;">
+    <h2>Putri Rambut Selako</h2>
+    <img src="Rambut Selako.jpg" alt="Shining hair" style="width:50%; display:block; margin:20px auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+  <p>
+    Putri Rambut Selako was renowned for her long, shining hair that was said to possess healing powers. 
+    According to local legend, her hair could cure diseases, bring good fortune, and protect people from 
+    evil forces. She was revered as a spiritual figure, often associated with purity, light, and 
+    divine femininity. Her story is deeply connected to the mystical elements of nature worship once 
+    practiced by ancient Sriwijaya communities.
+  </p>
+  <p>
+    Today, her tomb is considered a sacred place for those seeking peace and blessings. Many visitors 
+    believe that paying respect to Putri Rambut Selako brings balance and well-being into their lives. 
+    Her legend endures as a symbol of spiritual grace and the mysterious connection between humanity 
+    and nature.
+  </p>    
+  <button onclick="showSection('tombs')">Back</button>
+  </section>
+
+  <section class="section" id="junjungan" style="display:none;">
+    <h2>Panglima Tuan Junjungan</h2>
+    <img src="Tuan Junjungan.jpg" alt="Loyal commander" style="width:50%; display:block; margin:20px auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+  <p>
+    Panglima Tuan Junjungan was a loyal and strategic commander who served under the rulers of Sriwijaya. 
+    He is celebrated for his military intelligence, unwavering loyalty, and sense of duty to the empire. 
+    Tales of his leadership describe him as a man of discipline who led his troops with fairness and 
+    inspired them through personal courage and example.
+  </p>
+  <p>
+    The tomb of Tuan Junjungan stands as a monument to the values of honor, sacrifice, and patriotism. 
+    Pilgrims and historians alike visit this site to pay homage to one of Sriwijaya’s most respected 
+    warriors. His name, “Junjungan,” which means “the honored one,” reflects the respect and admiration 
+    his people held for him both in life and after his passing.
+  </p>
+  <button onclick="showSection('tombs')">Back</button>
+  </section>
+
+  <section class="section" id="kuning" style="display:none;">
+    <h2>Panglima Bagus Kuning</h2>
+    <img src="Bagus Kuning.jpg" alt="Golden warrior" style="width:50%; display:block; margin:20px auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+  <p>
+    Panglima Bagus Kuning, known as the Golden Warrior, is remembered for his unmatched bravery and noble 
+    character. His name “Kuning,” meaning “golden,” symbolizes purity, honor, and enlightenment. As one 
+    of the trusted generals of Sriwijaya, he fought with both strength and wisdom, ensuring the safety 
+    of the kingdom’s borders and the welfare of its people.
+  </p>
+  <p>
+    His tomb reflects his golden legacy—a symbol of moral integrity and unwavering courage. Local 
+    traditions regard the site as a place where one can draw inspiration for inner strength and clarity 
+    of purpose. Panglima Bagus Kuning’s story teaches the eternal lesson that true greatness lies in 
+    serving one’s people with a heart as pure as gold.
+  </p>    
+  <button onclick="showSection('tombs')">Back</button>
+  </section>
+
+  <section class="section" id="karang" style="display:none;">
+    <h2>Panglima Bagus Karang</h2>
+    <img src="Bagus Karang.jpg" alt="Steadfast warrior" style="width:50%; display:block; margin:20px auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+  <p>
+    Panglima Bagus Karang was known as the steadfast and unyielding warrior of Sriwijaya. The word 
+    “Karang,” meaning “rock,” symbolizes his firm determination and resilience in the face of 
+    challenges. He was often described as a protector of the kingdom’s integrity—guarding the land, 
+    sea, and people from all threats, both seen and unseen.
+  </p>
+  <p>
+    His tomb serves as a tribute to strength, endurance, and unwavering loyalty. Visitors come to 
+    reflect upon his legacy and the timeless message of perseverance that his life represents. Just as 
+    the coral rock withstands the ocean’s waves, Panglima Bagus Karang’s spirit stands as a reminder 
+    that courage and steadfastness are the foundation of a lasting civilization.
+  </p>    
+  <button onclick="showSection('tombs')">Back</button>
+  </section>
+
+</div>
+
+<script>
+function showSection(sectionId){
+  document.querySelectorAll('.section').forEach(sec=>sec.style.display='none');
+  document.getElementById(sectionId).style.display='block';
+  document.getElementById(sectionId).scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
